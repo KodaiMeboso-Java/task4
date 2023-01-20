@@ -13,10 +13,6 @@ public class Main {
         jumpheros.add(new JumpHero("家庭教師ヒットマンリボーン", "沢田綱吉", 2004));
         jumpheros.add(new JumpHero("ワールドトリガー", "空閑遊馬", 2013));
 
-        /*List<JumpHero> list = jumpheros.stream()
-                .filter(j -> j.getYear() <= 2000)
-                .collect(Collectors.toList());
-        System.out.println(list);*/
         jumpheros.stream().filter(j -> j.getYear() <= 2000).forEach(System.out::println);
     }
 }
